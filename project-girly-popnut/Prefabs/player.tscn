@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://j2hmnkk288h4"]
+
+[ext_resource type="Script" uid="uid://csmcbbex5ly2j" path="res://Scripts/player.gd" id="1_y6xdh"]
+[ext_resource type="Script" uid="uid://dfvbjqx8l3d55" path="res://Scripts/global_manager.gd" id="2_5wxv7"]
+[ext_resource type="PackedScene" uid="uid://dxnunn2i4o6mg" path="res://Prefabs/BasicBullet.tscn" id="2_y5hcb"]
+
+[sub_resource type="Gradient" id="Gradient_y6xdh"]
+offsets = PackedFloat32Array(0, 0.560241, 1)
+colors = PackedColorArray(0.8790751, 0.23270738, 1, 1, 0.95993453, 0.74577653, 1, 1, 1, 0.627451, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_5wxv7"]
+gradient = SubResource("Gradient_y6xdh")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y5hcb"]
+radius = 25.0
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1418850383]
+script = ExtResource("1_y6xdh")
+bulletPackedScene = ExtResource("2_y5hcb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=418241303]
+z_index = 2
+scale = Vector2(0.78125, 0.78125)
+texture = SubResource("GradientTexture2D_5wxv7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1933450015]
+shape = SubResource("CircleShape2D_y5hcb")
+
+[node name="GlobalManager" type="Node2D" parent="." unique_id=118483856]
+script = ExtResource("2_5wxv7")
