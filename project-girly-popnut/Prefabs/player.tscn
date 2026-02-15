@@ -4,12 +4,12 @@
 [ext_resource type="Script" uid="uid://dfvbjqx8l3d55" path="res://Scripts/global_manager.gd" id="2_5wxv7"]
 [ext_resource type="PackedScene" uid="uid://dxnunn2i4o6mg" path="res://Prefabs/BasicBullet.tscn" id="2_y5hcb"]
 
-[sub_resource type="Gradient" id="Gradient_y6xdh"]
+[sub_resource type="Gradient" id="Gradient_y5hcb"]
 offsets = PackedFloat32Array(0, 0.560241, 1)
 colors = PackedColorArray(0.8790751, 0.23270738, 1, 1, 0.95993453, 0.74577653, 1, 1, 1, 0.627451, 1, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_5wxv7"]
-gradient = SubResource("Gradient_y6xdh")
+gradient = SubResource("Gradient_y5hcb")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_y5hcb"]
 radius = 25.0

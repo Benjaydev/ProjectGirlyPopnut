@@ -1,12 +1,24 @@
 [gd_scene format=3 uid="uid://dd3w5c2vrxfri"]
 
 [ext_resource type="PackedScene" uid="uid://j2hmnkk288h4" path="res://Prefabs/player.tscn" id="1_68don"]
+[ext_resource type="Script" uid="uid://dfvbjqx8l3d55" path="res://Scripts/global_manager.gd" id="2_6ktyl"]
+[ext_resource type="Script" uid="uid://djhl7ue6flptu" path="res://Maps/enemy.gd" id="2_hrima"]
 
 [sub_resource type="Gradient" id="Gradient_ku2vv"]
 colors = PackedColorArray(0.22670749, 0.22670749, 0.22670746, 1, 0.38170326, 0.38170323, 0.38170323, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_thia8"]
 gradient = SubResource("Gradient_ku2vv")
+
+[sub_resource type="Gradient" id="Gradient_y6xdh"]
+offsets = PackedFloat32Array(0, 0.560241, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.11858783, 0.9999998, 0.32465428, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hrima"]
+gradient = SubResource("Gradient_y6xdh")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_csn78"]
+radius = 25.0
 
 [node name="Map1" type="Node2D" unique_id=1864018422]
 
@@ -17,5 +29,21 @@ zoom = Vector2(1.185, 1.185)
 scale = Vector2(15.073001, 8.296875)
 texture = SubResource("GradientTexture2D_thia8")
 
-[node name="CharacterBody2D" parent="." unique_id=1418850383 instance=ExtResource("1_68don")]
+[node name="Player" parent="." unique_id=1418850383 instance=ExtResource("1_68don")]
 position = Vector2(0, -2)
+
+[node name="Enemy" type="CharacterBody2D" parent="." unique_id=1546647132]
+position = Vector2(375, 0)
+script = ExtResource("2_hrima")
+speed = 150.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy" unique_id=1414244726]
+z_index = 2
+scale = Vector2(0.78125, 0.78125)
+texture = SubResource("GradientTexture2D_hrima")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=402248395]
+shape = SubResource("CircleShape2D_csn78")
+
+[node name="GlobalManager" type="Node2D" parent="Enemy" unique_id=1379855218]
+script = ExtResource("2_6ktyl")
