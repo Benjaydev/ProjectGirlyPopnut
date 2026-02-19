@@ -1,0 +1,117 @@
+[gd_scene format=3 uid="uid://d301nflpgvtkg"]
+
+[ext_resource type="Texture2D" uid="uid://cxnsecsqp4d73" path="res://VFX/Sprite_Textures/Sparkle_Sprte.png" id="1_vrhv8"]
+[ext_resource type="Texture2D" uid="uid://btbl1vdpapv1y" path="res://VFX/Sprite_Textures/Glimmer Sprite.png" id="2_746uo"]
+[ext_resource type="Texture2D" uid="uid://c7lcgdt0ix8pw" path="res://Art/HeartBullet_Sprite.png" id="3_jfody"]
+
+[sub_resource type="Curve" id="Curve_i2kg8"]
+_limits = [-360.0, 360.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 84.220116, 0, 0, Vector2(0.48648655, -12.134827), -85.52163, -85.52163, 0, 0, Vector2(1, -335.73035), -1073.445, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_3r2ki"]
+curve = SubResource("Curve_i2kg8")
+
+[sub_resource type="Gradient" id="Gradient_g2she"]
+colors = PackedColorArray(1.3262677, 0.9771322, 0, 1, 1, 0.574, 0.29000002, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_esmin"]
+gradient = SubResource("Gradient_g2she")
+
+[sub_resource type="Curve" id="Curve_vuosy"]
+_limits = [-1.0, 1.0, 0.0, 1.0]
+_data = [Vector2(0, -1), 0.0, 0.0, 0, 0, Vector2(0.972973, 1), 6.0469866, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_vq18l"]
+curve = SubResource("Curve_vuosy")
+
+[sub_resource type="Curve" id="Curve_v3dgr"]
+_limits = [-2.0, 2.0, 0.0, 1.0]
+_data = [Vector2(0.020270273, -2), 0.0, 0.0, 0, 0, Vector2(0.95945954, 2), 10.135898, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_mwqcg"]
+curve = SubResource("Curve_v3dgr")
+
+[sub_resource type="Curve" id="Curve_b86cy"]
+_limits = [0.0, 3.0, 0.0, 1.0]
+_data = [Vector2(0, 2.2921348), 0.0, -6.004994, 0, 0, Vector2(0.9932432, 0.40449452), -0.13483146, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_7wfjc"]
+curve = SubResource("Curve_b86cy")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_247pa"]
+particle_flag_disable_z = true
+direction = Vector3(0, 1, 0)
+spread = 14.824
+initial_velocity_min = 32.26
+initial_velocity_max = 134.41
+angular_velocity_curve = SubResource("CurveTexture_3r2ki")
+orbit_velocity_min = -0.34399992
+orbit_velocity_max = 0.3020001
+orbit_velocity_curve = SubResource("CurveTexture_mwqcg")
+gravity = Vector3(0, 0, 0)
+scale_min = 0.049999997
+scale_max = 0.08
+scale_over_velocity_max = 64.51
+scale_over_velocity_curve = SubResource("CurveTexture_7wfjc")
+color_ramp = SubResource("GradientTexture1D_esmin")
+hue_variation_curve = SubResource("CurveTexture_vq18l")
+
+[sub_resource type="Curve" id="Curve_3r2ki"]
+_data = [Vector2(0, 1), 0.0, -0.4494381, 0, 0, Vector2(1, 0), -2.7389305, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_g2she"]
+curve = SubResource("Curve_3r2ki")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_esmin"]
+particle_flag_disable_z = true
+direction = Vector3(0, 1, 0)
+spread = 17.085
+initial_velocity_min = 43.01
+initial_velocity_max = 75.27
+angular_velocity_min = 541.93994
+angular_velocity_max = 719.99994
+gravity = Vector3(0, 0, 0)
+scale_min = 0.02
+scale_max = 0.049999997
+scale_curve = SubResource("CurveTexture_g2she")
+color = Color(1, 0.9906667, 0.93, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g2she"]
+size = Vector2(94.85712, 94.85715)
+
+[node name="HeartBullet" type="Area2D" unique_id=79370746]
+scale = Vector2(0.038461536, 0.042168673)
+
+[node name="Sparkles" type="GPUParticles2D" parent="." unique_id=1120068890]
+position = Vector2(0.00018092555, 0)
+scale = Vector2(23.714272, 23.714287)
+amount = 10
+texture = ExtResource("1_vrhv8")
+lifetime = 0.17
+speed_scale = 0.5
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_247pa")
+
+[node name="Glimmer" type="GPUParticles2D" parent="." unique_id=945079693]
+position = Vector2(0.00018092555, 0)
+scale = Vector2(23.714272, 23.714287)
+texture = ExtResource("2_746uo")
+lifetime = 0.25
+speed_scale = 0.2
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_esmin")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1300452394]
+visible = false
+position = Vector2(3.9655788e-08, 0)
+scale = Vector2(1.0963857, 1)
+shape = SubResource("RectangleShape2D_g2she")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=607591862]
+scale = Vector2(0.99999994, 1)
+texture = ExtResource("3_jfody")
