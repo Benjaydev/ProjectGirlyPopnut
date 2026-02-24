@@ -1,27 +1,21 @@
 class_name Bullet extends RigidBody2D
 
-var packedSceneReference : PackedScene = null
-
-var direction : Vector2 = Vector2.ZERO
-var speed = 500
-
+@export var speed = 500
 @export var damage = 30
-
 @export var lifetime : float = 2
-var lifetimeCount = 0
-
-var targetPosition = null
-var targetVelocity = null
-
 @export var rigidBody : RigidBody2D 
 
+var packedSceneReference : PackedScene = null
+var direction : Vector2 = Vector2.ZERO
+var lifetimeCount = 0
+var targetPosition = null
+var targetVelocity = null
 var shotFrom : Character = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	visible = false
 	pass # Replace with function body.
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -55,11 +49,9 @@ func _integrate_forces(state : PhysicsDirectBodyState2D) -> void:
 		lifetimeCount = 0
 		visible = true
 
-
-
 func Shoot(pos, dir, shooter):
 	shotFrom = shooter
-	direction = dir	
+	direction = dir
 	targetPosition = pos
 	freeze = false
 	linear_velocity = (direction * speed) + shooter.velocity
