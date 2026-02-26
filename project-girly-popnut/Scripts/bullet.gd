@@ -16,10 +16,6 @@ var shotFrom : Character = null
 func _ready() -> void:
 	visible = false
 	pass # Replace with function body.
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
 	
 func _physics_process(delta: float) -> void:
 	if(visible):
@@ -40,7 +36,7 @@ func End():
 	GlobalManager.AddBulletToPool(self)
 	visible = false
 	linear_velocity = Vector2.ZERO
-	freeze = true		
+	freeze = true
 
 func _integrate_forces(state : PhysicsDirectBodyState2D) -> void:
 	if(targetPosition != null):

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b70pt7gxr75gb"]
+
+[ext_resource type="Script" uid="uid://ch5e4p0igvc5c" path="res://Scripts/powerup.gd" id="1_j21wu"]
+[ext_resource type="Texture2D" uid="uid://cxnsecsqp4d73" path="res://VFX/Sprite_Textures/Sparkle_Sprte.png" id="2_7j4k6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ueedi"]
+radius = 28.844397
+
+[node name="Powerup" type="RigidBody2D" unique_id=663350124 node_paths=PackedStringArray("rigidBody", "player")]
+gravity_scale = 0.0
+script = ExtResource("1_j21wu")
+rigidBody = NodePath(".")
+player = NodePath("")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=989872487]
+position = Vector2(-1.018559, 0)
+scale = Vector2(2.75, 1.273)
+texture = ExtResource("2_7j4k6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1073379843]
+position = Vector2(-2.0185544, -0.48815915)
+scale = Vector2(1.25, 1.25)
+shape = SubResource("CircleShape2D_ueedi")

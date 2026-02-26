@@ -53,6 +53,7 @@ size = Vector2(622.25, 415)
 
 [node name="Player" parent="." unique_id=1418850383 instance=ExtResource("1_034j0")]
 position = Vector2(0, -2)
+shootDelay = 0.25
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1458147709]
 position = Vector2(4.9108286, 6.0195484)
@@ -166,27 +167,6 @@ texture = SubResource("GradientTexture2D_1ei8k")
 position = Vector2(0, 0.5)
 scale = Vector2(14.558441, 14.558441)
 shape = SubResource("RectangleShape2D_0nhn7")
-
-[node name="Enemy" parent="." unique_id=1414065949 instance=ExtResource("2_g6lpq")]
-position = Vector2(321.45688, 210.91354)
-
-[node name="Enemy2" parent="." unique_id=921946910 instance=ExtResource("2_g6lpq")]
-position = Vector2(321, -35)
-
-[node name="Enemy3" parent="." unique_id=1183302488 instance=ExtResource("2_g6lpq")]
-position = Vector2(-603, -35)
-
-[node name="Enemy4" parent="." unique_id=1549004663 instance=ExtResource("2_g6lpq")]
-position = Vector2(-603, -325)
-
-[node name="Enemy5" parent="." unique_id=984213999 instance=ExtResource("2_g6lpq")]
-position = Vector2(-712, 361)
-
-[node name="Enemy6" parent="." unique_id=646597528 instance=ExtResource("2_g6lpq")]
-position = Vector2(-73, 361)
-
-[node name="Enemy7" parent="." unique_id=115358006 instance=ExtResource("2_g6lpq")]
-position = Vector2(-108, -358)
 
 [node name="EnemySpawnManager" type="Node2D" parent="." unique_id=338861702]
 script = ExtResource("3_034j0")

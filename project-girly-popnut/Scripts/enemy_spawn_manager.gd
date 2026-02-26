@@ -22,7 +22,7 @@ func GetAreas(node):
 	return areas
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 	
 func _physics_process(delta: float) -> void:
@@ -44,8 +44,8 @@ func SpawnEnemyInValid(enemyType):
 	
 	var shape = validAreas[rand]
 	var rect : Rect2 = shape.shape.shape.get_rect()
-	var x = randi_range(rect.position.x, rect.position.x+rect.size.x)
-	var y = randi_range(rect.position.y, rect.position.y+rect.size.y)
+	var x = randi_range(int(rect.position.x), int(rect.position.x+rect.size.x))
+	var y = randi_range(int(rect.position.y), int(rect.position.y+rect.size.y))
 	var rand_point = shape.shape.global_position + Vector2(x,y)
 	
 	var enemy = enemyTypes[enemyType].instantiate()
