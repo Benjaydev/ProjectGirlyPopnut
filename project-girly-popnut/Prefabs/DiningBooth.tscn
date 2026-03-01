@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://pc735l5wa8ux"]
+
+[ext_resource type="Texture2D" uid="uid://d5h1aa1mbv36" path="res://Art/Front_Booth.png" id="1_th228"]
+[ext_resource type="Texture2D" uid="uid://ddbhab4rpa16k" path="res://Art/Rectangle_Table.png" id="2_k4dss"]
+[ext_resource type="Texture2D" uid="uid://cbdbte7tkmgqf" path="res://Art/Back_Booth.png" id="3_dp8c4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oh5ie"]
+size = Vector2(20, 9.974291)
+
+[node name="DiningBooth" type="Node2D" unique_id=1606788444]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=819116354]
+
+[node name="FrontBooth" type="Sprite2D" parent="StaticBody2D" unique_id=464145018]
+position = Vector2(0, -416.5)
+texture = ExtResource("1_th228")
+
+[node name="RectTable" type="Sprite2D" parent="StaticBody2D" unique_id=818082782]
+position = Vector2(0, 34.5)
+texture = ExtResource("2_k4dss")
+
+[node name="BackBooth" type="Sprite2D" parent="StaticBody2D" unique_id=246869142]
+position = Vector2(0, 412.5)
+texture = ExtResource("3_dp8c4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2059063322]
+position = Vector2(0, -114)
+scale = Vector2(47.920006, 77.80002)
+shape = SubResource("RectangleShape2D_oh5ie")
+debug_color = Color(0.8369376, 0.28998005, 0.65362716, 0.41960785)

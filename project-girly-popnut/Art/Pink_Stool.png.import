@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3w1hukiyt4sj"
-path="res://.godot/imported/Cat LookFront.png-e943ee7e4d1171bd5c7a0cbd29789c45.ctex"
+uid="uid://b6cn25tma2jk5"
+path="res://.godot/imported/Pink_Stool.png-f55ffad49ade7c39b3e8d222bd3d3dbb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Cat LookFront.png"
-dest_files=["res://.godot/imported/Cat LookFront.png-e943ee7e4d1171bd5c7a0cbd29789c45.ctex"]
+source_file="res://Art/Pink_Stool.png"
+dest_files=["res://.godot/imported/Pink_Stool.png-f55ffad49ade7c39b3e8d222bd3d3dbb.ctex"]
 
 [params]
 

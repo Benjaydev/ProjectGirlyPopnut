@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvr101rd6chio"
-path="res://.godot/imported/Cat LookRight.png-85549e2ebc0a2307a1e734b478774230.ctex"
+uid="uid://bowpub6wnwkav"
+path="res://.godot/imported/Straw_Shake.png-7b9cf9a349ba54b328047aa07be623ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Cat LookRight.png"
-dest_files=["res://.godot/imported/Cat LookRight.png-85549e2ebc0a2307a1e734b478774230.ctex"]
+source_file="res://Art/Straw_Shake.png"
+dest_files=["res://.godot/imported/Straw_Shake.png-7b9cf9a349ba54b328047aa07be623ed.ctex"]
 
 [params]
 

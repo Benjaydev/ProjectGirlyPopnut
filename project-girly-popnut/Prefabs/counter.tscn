@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://cun6lttx03g20"]
+
+[ext_resource type="Texture2D" uid="uid://djos2vmht7ri1" path="res://Art/Counter.png" id="1_nl221"]
+[ext_resource type="Texture2D" uid="uid://rpk4eqlt4a54" path="res://Art/Blue_Stool.png" id="2_nny3o"]
+[ext_resource type="Texture2D" uid="uid://b6cn25tma2jk5" path="res://Art/Pink_Stool.png" id="3_txuoe"]
+[ext_resource type="Texture2D" uid="uid://k6ij1ebftjn8" path="res://Art/Coffee_Pot.png" id="4_fxx23"]
+[ext_resource type="Texture2D" uid="uid://csrpotrltvbss" path="res://Art/Coffee_Mug.png" id="5_21ke8"]
+[ext_resource type="Texture2D" uid="uid://brunxir2vnpg4" path="res://Art/Till.png" id="6_sad8m"]
+[ext_resource type="Texture2D" uid="uid://b2imu17fwyb2q" path="res://Art/Choc_Shake.png" id="7_5gqnm"]
+[ext_resource type="Texture2D" uid="uid://t7vgxcgeaq40" path="res://Art/Egg.png" id="8_laxce"]
+[ext_resource type="Texture2D" uid="uid://bowpub6wnwkav" path="res://Art/Straw_Shake.png" id="9_3ka84"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lrc6o"]
+size = Vector2(20, 4.318075)
+
+[node name="Counter" type="Node2D" unique_id=1903928829]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1700737715]
+
+[node name="CounterTop" type="Sprite2D" parent="StaticBody2D" unique_id=568122261]
+texture = ExtResource("1_nl221")
+
+[node name="BlueStool" type="Sprite2D" parent="StaticBody2D" unique_id=384819957]
+position = Vector2(-645.5, 272.5)
+texture = ExtResource("2_nny3o")
+
+[node name="PinkStool" type="Sprite2D" parent="StaticBody2D" unique_id=1375522302]
+position = Vector2(-230, 272.5)
+texture = ExtResource("3_txuoe")
+
+[node name="BlueStool2" type="Sprite2D" parent="StaticBody2D" unique_id=474503567]
+position = Vector2(231.5, 272.5)
+texture = ExtResource("2_nny3o")
+
+[node name="PinkStool2" type="Sprite2D" parent="StaticBody2D" unique_id=1972506251]
+position = Vector2(647, 272.5)
+texture = ExtResource("3_txuoe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1606128107]
+position = Vector2(0, -84.5)
+scale = Vector2(93.08559, 38.211468)
+shape = SubResource("RectangleShape2D_lrc6o")
+debug_color = Color(0.7611252, 0.36513498, 0.6897748, 0.41960785)
+
+[node name="CoffeePot" type="Sprite2D" parent="." unique_id=370399672]
+position = Vector2(814, -340)
+texture = ExtResource("4_fxx23")
+
+[node name="CoffeeMug" type="Sprite2D" parent="." unique_id=1841729249]
+position = Vector2(536, -206)
+texture = ExtResource("5_21ke8")
+
+[node name="Till" type="Sprite2D" parent="." unique_id=1066619067]
+position = Vector2(0, -342)
+texture = ExtResource("6_sad8m")
+
+[node name="ChocShake" type="Sprite2D" parent="." unique_id=1011574250]
+position = Vector2(-511, -413)
+texture = ExtResource("7_5gqnm")
+
+[node name="Egg" type="Sprite2D" parent="." unique_id=1412928211]
+position = Vector2(-646, -181)
+texture = ExtResource("8_laxce")
+
+[node name="StrawShake" type="Sprite2D" parent="." unique_id=245594774]
+position = Vector2(-359, -294)
+texture = ExtResource("9_3ka84")

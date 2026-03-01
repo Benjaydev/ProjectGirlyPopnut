@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://67e2qwm4r3yh"
-path="res://.godot/imported/Cat LookBack.png-456eb5208fe7a26f6ecb80c80ea4d01c.ctex"
+uid="uid://djos2vmht7ri1"
+path="res://.godot/imported/Counter.png-7d65e59ad78038b4fd6b07058926fef3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Cat LookBack.png"
-dest_files=["res://.godot/imported/Cat LookBack.png-456eb5208fe7a26f6ecb80c80ea4d01c.ctex"]
+source_file="res://Art/Counter.png"
+dest_files=["res://.godot/imported/Counter.png-7d65e59ad78038b4fd6b07058926fef3.ctex"]
 
 [params]
 
