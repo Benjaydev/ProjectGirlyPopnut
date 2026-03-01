@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://c5yjlau7sy0e2"]
+
+[ext_resource type="Texture2D" uid="uid://bpn5yyx41du2y" path="res://Art/Front_Chair.png" id="1_ewkav"]
+[ext_resource type="Texture2D" uid="uid://ct528k7m3421h" path="res://Art/Round_Table.png" id="2_e1pw1"]
+[ext_resource type="Texture2D" uid="uid://dc6hfestciup1" path="res://Art/Side_Chair.png" id="3_awcfc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rxf6y"]
+size = Vector2(7.9034142, 9.805343)
+
+[node name="Table" type="Node2D" unique_id=107290535]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1521852869]
+
+[node name="Sprite2D3" type="Sprite2D" parent="StaticBody2D" unique_id=1517197315]
+position = Vector2(0, -326)
+texture = ExtResource("1_ewkav")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1551095385]
+texture = ExtResource("2_e1pw1")
+
+[node name="Sprite2D2" type="Sprite2D" parent="StaticBody2D" unique_id=131925867]
+position = Vector2(332, 0)
+texture = ExtResource("3_awcfc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1412444827]
+position = Vector2(-0.5, -218.5)
+scale = Vector2(51.749786, -36.81666)
+shape = SubResource("RectangleShape2D_rxf6y")
+debug_color = Color(0.8201887, 0.28065136, 0.72947156, 0.41960785)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1839714411]
+position = Vector2(208, -98.00001)
+scale = Vector2(69.98978, -12.616665)
+shape = SubResource("RectangleShape2D_rxf6y")
+debug_color = Color(0.8201887, 0.28065136, 0.72947156, 0.41960785)
