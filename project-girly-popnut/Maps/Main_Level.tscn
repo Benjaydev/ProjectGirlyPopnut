@@ -8,11 +8,11 @@
 [ext_resource type="Script" uid="uid://c7rjwpjtch5oq" path="res://Scripts/enemy_spawn_config.gd" id="5_ufjxb"]
 [ext_resource type="Texture2D" uid="uid://dr4myx2hnp55t" path="res://Art/Diner_Wall.png" id="7_iq2kk"]
 [ext_resource type="Texture2D" uid="uid://cw3kvviy7yqvl" path="res://Art/Kitchen_Door.png" id="7_ufjxb"]
-[ext_resource type="PackedScene" uid="uid://pc735l5wa8ux" path="res://Prefabs/DiningBooth.tscn" id="9_gqn7c"]
+[ext_resource type="PackedScene" path="res://Prefabs/DiningBooth.tscn" id="9_gqn7c"]
 [ext_resource type="Texture2D" uid="uid://bemqf1lc7d0if" path="res://Art/Cupboard.png" id="10_6v2gh"]
 [ext_resource type="Texture2D" uid="uid://da1tntlouokn" path="res://Art/Store_Door.png" id="11_vpyoe"]
 [ext_resource type="Texture2D" uid="uid://d0d420scygs4u" path="res://Art/Window.png" id="12_g63sl"]
-[ext_resource type="PackedScene" uid="uid://cun6lttx03g20" path="res://Prefabs/counter.tscn" id="13_vpyoe"]
+[ext_resource type="PackedScene" path="res://Prefabs/counter.tscn" id="13_vpyoe"]
 [ext_resource type="Texture2D" uid="uid://duv7pl4cwmtvs" path="res://Art/Purple_Record.png" id="14_drr2p"]
 [ext_resource type="Texture2D" uid="uid://cmqht0cdyqal" path="res://Art/Pink_Record.png" id="15_6xfpo"]
 [ext_resource type="Texture2D" uid="uid://2dfulrimmovp" path="res://Art/Blue_Record.png" id="16_xccmc"]
@@ -22,9 +22,9 @@
 [ext_resource type="Texture2D" uid="uid://csrpotrltvbss" path="res://Art/Coffee_Mug.png" id="20_y0lar"]
 [ext_resource type="Texture2D" uid="uid://bowpub6wnwkav" path="res://Art/Straw_Shake.png" id="21_bv0jv"]
 [ext_resource type="Texture2D" uid="uid://b2imu17fwyb2q" path="res://Art/Choc_Shake.png" id="22_g7mqf"]
-[ext_resource type="PackedScene" uid="uid://ce3ttcqjnlyee" path="res://Prefabs/juke_box.tscn" id="23_kpi7b"]
-[ext_resource type="PackedScene" uid="uid://c5yjlau7sy0e2" path="res://Prefabs/Table1.tscn" id="24_bv0jv"]
-[ext_resource type="PackedScene" uid="uid://71q20iw1raeq" path="res://Prefabs/Table2.tscn" id="25_g7mqf"]
+[ext_resource type="PackedScene" path="res://Prefabs/juke_box.tscn" id="23_kpi7b"]
+[ext_resource type="PackedScene" path="res://Prefabs/Table1.tscn" id="24_bv0jv"]
+[ext_resource type="PackedScene" path="res://Prefabs/Table2.tscn" id="25_g7mqf"]
 
 [sub_resource type="Gradient" id="Gradient_bv0jv"]
 interpolation_mode = 2
@@ -78,7 +78,7 @@ position = Vector2(0, -2)
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1458147709]
 position = Vector2(4.9108286, 6.0195484)
 scale = Vector2(1.6369429, 1.3398495)
-zoom = Vector2(0.495, 0.495)
+zoom = Vector2(0.7, 0.7)
 
 [node name="Void" type="Sprite2D" parent="." unique_id=134422456]
 scale = Vector2(93.805405, 68.6854)
