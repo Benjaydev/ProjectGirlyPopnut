@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3w1hukiyt4sj"
-path="res://.godot/imported/Cat LookFront.png-e943ee7e4d1171bd5c7a0cbd29789c45.ctex"
+uid="uid://b8b5dywu7fio5"
+path="res://.godot/imported/Crow Midflap.png-bf4cb4471325392d45535cae82677a39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Cat LookFront.png"
-dest_files=["res://.godot/imported/Cat LookFront.png-e943ee7e4d1171bd5c7a0cbd29789c45.ctex"]
+source_file="res://Art/Crow/Crow Midflap.png"
+dest_files=["res://.godot/imported/Crow Midflap.png-bf4cb4471325392d45535cae82677a39.ctex"]
 
 [params]
 

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ce3ttcqjnlyee"]
+
+[ext_resource type="Texture2D" uid="uid://hrwalppqn7x6" path="res://Art/Jukebox.png" id="1_1oytr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nyrns"]
+size = Vector2(20, 4.505073)
+
+[node name="JukeBox" type="Node2D" unique_id=645584916]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1897662305]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1477867039]
+texture = ExtResource("1_1oytr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=14640990]
+position = Vector2(0.00017046928, -286)
+scale = Vector2(23.599998, 36.403408)
+shape = SubResource("RectangleShape2D_nyrns")
+debug_color = Color(0.90575796, 0.18836412, 0.59827006, 0.41960785)
