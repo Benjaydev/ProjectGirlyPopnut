@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://csmcbbex5ly2j" path="res://Scripts/player.gd" id="1_y6xdh"]
 [ext_resource type="Script" uid="uid://dfvbjqx8l3d55" path="res://Scripts/global_manager.gd" id="2_5wxv7"]
 [ext_resource type="PackedScene" uid="uid://dxnunn2i4o6mg" path="res://Prefabs/BasicBullet.tscn" id="2_y5hcb"]
-
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y5hcb"]
 load_path = "res://.godot/imported/Cat LookFront.png-f1a3f02889d3479040f7659435e6f728.ctex"
 

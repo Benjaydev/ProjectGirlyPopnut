@@ -7,15 +7,16 @@ func SpawnBullet(packedScene) -> Bullet:
 	if(packedScene == null):
 		return
 		
-	var key = packedScene.get_path()
-	if inactiveBulletPool.has(key):
-		var poolArray : Array = inactiveBulletPool[key]
-		if(len(poolArray) != 0):
-			var bullet = poolArray[-1]
-			inactiveBulletPool[key].pop_back()
-			return bullet
-	else:
-		inactiveBulletPool[key] = []
+	# disable pooling while working through instantiation bug
+	# var key = packedScene.get_path()
+	# if inactiveBulletPool.has(key):
+	# 	var poolArray : Array = inactiveBulletPool[key]
+	# 	if(len(poolArray) != 0):
+	# 		var existingBullet = poolArray[-1]
+	# 		inactiveBulletPool[key].pop_back()
+	# 		return existingBullet
+	# else:
+	# 	inactiveBulletPool[key] = []
 
 	var bullet = packedScene.instantiate()
 	bullet.packedSceneReference = packedScene
